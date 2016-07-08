@@ -7,31 +7,16 @@ After installing, new images that you save will use an absolute URL to S3. Any
 requests to `/content/images/` will be proxied to S3, so that any previous
 images in your blog will not be affected.
 
-## Installation
+## Install Storage Module
 
 You will need to have a the custom storage module directly in your project
-directory, the easiest way to do this is to change to the directory your ghost
-installation and execute the following commands:
+directory, the easiest way to do this is to execute the following commands:
 
 ```bash
+$ mkdir -p INSTALL_DIR/ghost/content/storage/
+$ cd /tmp
 $ npm install ghost-storage-s3
-$ npm shrinkwrap
-```
-
-## Create Storage Module
-
-Create a directory to store your custom storage module:
-
-```bash
-$ sudo mkdir -p content/storage/ghost-s3
-```
-
-In the `ghost-s3/` directory you need to create a file named `index.js` with the following
-contents:
-
-```javascript
-'use strict';
-module.exports = require('ghost-storage-s3');
+$ cp -r node_modules/ghost-storage-s3 INSTALL_DIR/ghost/content/storage/ghost-storage-s3
 ```
 
 ## Configuration
