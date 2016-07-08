@@ -10,6 +10,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - Forked [frankhinek/ghost-storage-s3](https://github.com/frankhinek/ghost-storage-s3) from [spanishdict/ghost-s3-compat](https://github.com/spanishdict/ghost-s3-compat)
 - Changed module name from ghost-s3-compat to ghost-storage-s3
 - Start following [SemVer](http://semver.org) properly.
+- Changed installation steps in README to match guidance by Ghost Foundation
+CTO and co-founder, Hannah Wolfe, in [this issue](https://github.com/spanishdict/ghost-s3-compat/issues/5).
 
 ### Fixed
 - Use path-style URLs to construct the S3 endpoint images can be read from to

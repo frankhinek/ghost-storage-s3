@@ -1,4 +1,4 @@
-# Ghost S3 Storage, compatability mode
+# Ghost S3 Custom Storage Module
 
 This module allows you to read and write images from Amazon S3 instead of
 storing them locally.
