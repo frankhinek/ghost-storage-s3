@@ -40,7 +40,7 @@ Create new IAM User with permissions to get object from that bucket. Save the `A
 
 In `config.js`, add a `storage` block for each environment. A list of valid regions can be accessed in the AWS General Reference of [S3 AWS Regions and Endpoints](http://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region).
 
-```JSON
+```javascript
     storage: {
         active: 'ghost-s3',
         'ghost-s3': {
@@ -56,7 +56,7 @@ In `config.js`, add a `storage` block for each environment. A list of valid regi
 
 You can add `assetHost` to your config to specify a virtual host url. This is most frequently used with a content delivery network (CDN) such as CloudFront, CloudFlare, or others.  The modified `storage` block would be:
 
-```JSON
+```javascript
     storage: {
         active: 'ghost-s3',
         'ghost-s3': {
